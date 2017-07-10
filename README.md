@@ -2,6 +2,7 @@
 
 [![Build](https://travis-ci.org/Serheo/ToastMessage.svg?branch=master)](https://travis-ci.org/Serheo/ToastMessage)
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/ToastMessage.svg)](https://img.shields.io/cocoapods/v/ToastMessage.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Toast Messages for iOS 9.0 and higher. <br/>
