@@ -79,7 +79,7 @@ ToastManager.shared.showNotification(message: "Custom Message",
 ToastManager.shared.cancelAll()
 ```
 
-![Notification screenshot](https://raw.github.com/Serheo/ToastMessage/master/Screenshots/ToastScreenshot.png)
+![Notification screenshot](https://raw.github.com/Serheo/ToastMessage/master/Screenshots/NotificationScreenshot.png)
 
 ## Requirements
 iOS 9+
