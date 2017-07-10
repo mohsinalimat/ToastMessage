@@ -19,7 +19,7 @@ github "Serheo/ToastMessage"
 ```
 #### CocoaPods
 ```
-github "Serheo/ToastMessage"
+pod 'ToastMessage'
 ```
 
 ## Getting Started
