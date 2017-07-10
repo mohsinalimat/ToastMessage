@@ -9,21 +9,21 @@ import UIKit
 */
 struct ToastMessage: Hashable, Equatable {
 
-    let msg: String
+    let message: String
     let duration: TimeInterval
 
-    init(msg: String, duration: TimeInterval) {
-        self.msg = msg
+    init(message: String, duration: TimeInterval) {
+        self.message = message
         self.duration = duration
     }
 
     var hashValue: Int {
-        return self.msg.hashValue
+        return self.message.hashValue
     }
 
     static func == (lhs: ToastMessage, rhs: ToastMessage) -> Bool {
         // more than enough for now
-        let areEqual = lhs.msg == rhs.msg
+        let areEqual = lhs.message == rhs.message
         return areEqual
     }
 }

@@ -14,7 +14,7 @@ import UIKit
  */
 final class ToastSimpleView: UIView, ToastView {
 
-    public weak var toastDelegate: ToastViewDelegate?
+    weak var toastDelegate: ToastViewDelegate?
     private let backView: UIView
     private let title: UILabel
 
@@ -106,7 +106,7 @@ final class ToastSimpleView: UIView, ToastView {
 
     func fill(msg: ToastMessage, style: ToastViewStyle) {
         backView.backgroundColor = style.backgroundColor
-        title.text = msg.msg
+        title.text = msg.message
         title.textColor = style.textColor
         title.font = style.font
     }

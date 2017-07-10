@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -66,24 +65,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymO-Jx-tNV">
-                                <rect key="frame" x="66" y="114" width="109" height="30"/>
+                                <rect key="frame" x="66" y="414" width="109" height="30"/>
                                 <state key="normal" title="Top Notification"/>
                                 <connections>
                                     <action selector="topNotificationClicked:" destination="Eii-ME-UZr" eventType="touchUpInside" id="dQh-9G-fev"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhw-Zj-r79">
-                                <rect key="frame" x="66" y="184" width="136" height="30"/>
+                                <rect key="frame" x="66" y="484" width="136" height="30"/>
                                 <state key="normal" title="Custom Notification"/>
                                 <connections>
                                     <action selector="customNotificationClicked:" destination="Eii-ME-UZr" eventType="touchUpInside" id="EEe-Ba-O9W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOp-PA-dR6">
+                                <rect key="frame" x="66" y="554" width="166" height="30"/>
+                                <state key="normal" title="Cancel enqueued toasts"/>
+                                <connections>
+                                    <action selector="cancelclicked:" destination="Eii-ME-UZr" eventType="touchUpInside" id="ocj-qT-Bl4"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Uhw-Zj-r79" firstAttribute="top" secondItem="ymO-Jx-tNV" secondAttribute="bottom" constant="40" id="96H-fS-Led"/>
-                            <constraint firstItem="ymO-Jx-tNV" firstAttribute="top" secondItem="dzs-hC-GWe" secondAttribute="bottom" constant="50" id="QpG-PW-BtS"/>
+                            <constraint firstItem="GOp-PA-dR6" firstAttribute="leading" secondItem="NVT-Tn-91p" secondAttribute="leadingMargin" constant="50" id="9LN-1D-932"/>
+                            <constraint firstItem="GOp-PA-dR6" firstAttribute="top" secondItem="Uhw-Zj-r79" secondAttribute="bottom" constant="40" id="JMk-ZO-AUI"/>
+                            <constraint firstItem="ymO-Jx-tNV" firstAttribute="top" secondItem="dzs-hC-GWe" secondAttribute="bottom" constant="350" id="QpG-PW-BtS"/>
                             <constraint firstItem="ymO-Jx-tNV" firstAttribute="leading" secondItem="NVT-Tn-91p" secondAttribute="leadingMargin" constant="50" id="jfi-CC-NFK"/>
                             <constraint firstItem="Uhw-Zj-r79" firstAttribute="leading" secondItem="NVT-Tn-91p" secondAttribute="leadingMargin" constant="50" id="vHn-4h-jz6"/>
                         </constraints>
@@ -107,6 +115,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtm-On-Way">
                                 <rect key="frame" x="66" y="114" width="68" height="30"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="Top Toast"/>
                                 <connections>
                                     <action selector="topToastClicked:" destination="BKI-50-jAZ" eventType="touchUpInside" id="uX4-Ub-aBr"/>

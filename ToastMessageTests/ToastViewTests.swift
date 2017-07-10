@@ -22,7 +22,7 @@ class ToastViewTests: XCTestCase {
     func testViewStyle() {
         let delegateMock = ToastDelegateMock()
         let testStyle = ToastTestStyle()
-        let testMessage = ToastMessage(msg: "Example", duration: 3.0)
+        let testMessage = ToastMessage(message: "Example", duration: 3.0)
 
         let viewSimple = ToastSimpleFabric().view(delegate: delegateMock,
                                                   message: testMessage, style: testStyle)
@@ -38,7 +38,7 @@ class ToastViewTests: XCTestCase {
     func testDefaultViewStyle() {
         let delegateMock = ToastDelegateMock()
         let testStyle = ToastDefaultStyle()
-        let testMessage = ToastMessage(msg: "Example", duration: 3.0)
+        let testMessage = ToastMessage(message: "Example", duration: 3.0)
         let viewSimple = ToastSimpleFabric().view(delegate: delegateMock,
                                                   message: testMessage, style: testStyle)
         let viewList = [viewSimple]
@@ -61,7 +61,7 @@ class ToastViewTests: XCTestCase {
         }
 
         XCTAssert(label.font == testStyle.font, "Should assign label font")
-        XCTAssert(label.text == message.msg, "Should assign label text")
+        XCTAssert(label.text == message.message, "Should assign label text")
         XCTAssert(label.textColor == testStyle.textColor, "Should assign label text color")
         XCTAssert(backView.backgroundColor == testStyle.backgroundColor, "Should assign view background")
     }

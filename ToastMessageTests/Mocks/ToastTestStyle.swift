@@ -10,9 +10,7 @@ import UIKit
 @testable import ToastMessage
 
 struct ToastTestStyle: ToastViewStyle {
-    public var backgroundColor: UIColor = UIColor.yellow
-    public var textColor: UIColor = UIColor.green
-    public var font: UIFont = UIFont.boldSystemFont(ofSize: 22)
-
-    init() {}
+    let  backgroundColor: UIColor = UIColor.yellow
+    let textColor: UIColor = UIColor.green
+    let font: UIFont = UIFont.boldSystemFont(ofSize: 22)
 }

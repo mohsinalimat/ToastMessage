@@ -1,0 +1,7 @@
+language: objective-c
+
+branches:
+  only:
+    master
+
+script: xcodebuild -scheme ToastMessage -sdk iphonesimulator test

@@ -17,20 +17,22 @@ class NotificaitonsViewController: UIViewController {
     }
 
     @IBAction func topNotificationClicked(_ sender: Any) {
-         ToastManager.shared.showNotificationMessage(msg: "Top Message")
+         ToastManager.shared.showNotification(message: "Top Message")
     }
 
     @IBAction func customNotificationClicked(_ sender: Any) {
-        ToastManager.shared.showNotificationMessage(msg: "Custom Message",
+        ToastManager.shared.showNotification(message: "Custom Message",
                                                     duration: 2.0, style: NotificationCustomStyle())
     }
 
-    struct NotificationCustomStyle: ToastViewStyle {
-        public var backgroundColor: UIColor = UIColor.orange
-        public var textColor: UIColor = UIColor.black
-        public var font: UIFont = UIFont.systemFont(ofSize: 16.0)
+    @IBAction func cancelclicked(_ sender: Any) {
+        ToastManager.shared.cancelAll()
+    }
 
-        init() {}
+    struct NotificationCustomStyle: ToastViewStyle {
+        let backgroundColor: UIColor = UIColor.orange
+        let textColor: UIColor = UIColor.black
+        let font: UIFont = UIFont.systemFont(ofSize: 16.0)
     }
 
 }

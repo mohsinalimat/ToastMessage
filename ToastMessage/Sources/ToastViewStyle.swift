@@ -16,12 +16,8 @@ public protocol ToastViewStyle {
  Default implementation for Toast Style.
  Black background, 16 System Font.
 */
-public struct ToastDefaultStyle: ToastViewStyle {
-    public var backgroundColor: UIColor = UIColor.black.withAlphaComponent(0.8)
-    public var textColor: UIColor = UIColor.white
-    public var font: UIFont = UIFont.systemFont(ofSize: 16)
-
-    public init() {
-
-    }
+struct ToastDefaultStyle: ToastViewStyle {
+    let backgroundColor: UIColor = UIColor.black.withAlphaComponent(0.9)
+    let textColor: UIColor = UIColor.white
+    let font: UIFont = UIFont.systemFont(ofSize: 16)
 }

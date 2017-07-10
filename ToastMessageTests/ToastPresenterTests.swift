@@ -29,7 +29,7 @@ class ToastPresenterTests: XCTestCase {
             let target = UIView()
 
             let expect = expectation(description: "View should be added")
-            presenter.present(target: target, with: ToastViewLocation.default, to: window) {
+            presenter.present(target: target, with: ToastViewLocation.top, to: window) {
                 expect.fulfill()
 
                 let founded = window.subviews.filter({ (item) -> Bool in

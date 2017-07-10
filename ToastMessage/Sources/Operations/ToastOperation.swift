@@ -69,4 +69,9 @@ final class ToastOperation: ToastBasicOperation, ToastViewDelegate {
         hideView()
     }
 
+    override func cancel() {
+        super.cancel()
+        hideView()
+    }
+
 }
