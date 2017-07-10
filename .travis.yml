@@ -1,7 +1,9 @@
-language: objective-c
+language: swift
+xcode_project: ToastMessage.xcodeproj
+xcode_scheme: ToastMessageTests
 
 branches:
   only:
     master
 
-script: xcodebuild -scheme ToastMessage -sdk iphonesimulator test
+script: xcodebuild -project ToastMessage.xcodeproj -scheme ToastMessage -sdk iphonesimulator test ONLY_ACTIVE_ARCH=NO

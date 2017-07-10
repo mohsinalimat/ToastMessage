@@ -29,7 +29,7 @@ final class ToastOperation: ToastBasicOperation, ToastViewDelegate {
         super.init()
     }
 
-    override open func start() {
+    override func start() {
         if isCancelled {
             self.state = .finished
             return
@@ -39,7 +39,7 @@ final class ToastOperation: ToastBasicOperation, ToastViewDelegate {
         main()
     }
 
-    override open func main() {
+    override func main() {
         if isCancelled == true || self.state == .finished {
             return
         }
